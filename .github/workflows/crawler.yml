@@ -63,6 +63,7 @@ jobs:
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
           GITHUB_ACTIONS: true
         run: python main.py
+          echo secrets.EMAIL_FROM
 
       - name: Commit and push if changes
         run: |
